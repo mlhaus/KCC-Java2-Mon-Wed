@@ -52,7 +52,10 @@ public class AnimalTest {
     // TODO - Set the ID to something not already set
     @Test
     public void testSetId() {
-        fail("The test case is a prototype.");
+        setUp();
+        String expected = "0";
+        String actual = animal.getId();
+        assertEquals(expected,actual);
     }
     
     // TODO - Create a second Animal object with a unique id. Try to set the first animal's id equal to the second one
